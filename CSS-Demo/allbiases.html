@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<title>All Biases</title>
+
+	<link rel="stylesheet" href="styles/main.css" media="screen" type="text/css">
+	<link rel="stylesheet" href="styles/printer.css" media="print">
+
+
+	<script>
+		// addressing script off from CSS point of view. If script is on it removes the class.  If not class is there and <noscript> as well below is shown
+		document.documentElement.classList.remove('no-js');
+	</script>
+	<script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+<!-- make a decision of how you are going to add in rocks.png and sky.jpg.  Would you use CSS, HTML or both?  Whatever you do get them in the page
+-->
+<h1>Image of Rocks</h1>
+<picture>
+    <img src="images/rocks.png" width="600" height="800">
+</picture>
+
+
+<noscript>
+	<!-- Question: bury the error message in here or not? Could we have a CSS off error message.  If so implement it.  -->
+	<p id="error_msg"></p>
+</noscript>
+
+<h1>All About Biases</h1>
+<hr>
+<nav>
+	<ul id="Full List of Biases">
+		<li class="fancy"><a id="anchor_link" href="#anchoring">Anchoring</a></li>
+		<li><a href="#sunk_cost_fallacy">Sunk Cost Fallacy</a></li>
+		<li><a href="#availability_heuristic">The Availability Heuristic</a></li>
+
+	</ul>
+</nav>
+</header>
+<main>
+<section id="intro">
+	<h1>thou shalt not suffer cognitive biases</h1>
+<p>Cognitive biases make our judgments irrational. We have evolved to use shortcuts in our thinking, which are often useful, but a cognitive bias means there’s a kind of misfiring going on causing us to lose objectivity. This website has been designed to help you identify some of the most common biases stuffing up your thinking.</p>
+</section>
+
+<section id="article_list">
+
+<article id="anchoring">
+    <h1>anchoring</h1>
+    <h2>The first thing you judge influences your judgment of all that follows.</h2>
+    <p>Human minds are associative in nature, so the order in which we receive information helps determine the course of our judgments and perceptions. For instance, the first price offered for a used car sets an ‘anchor’ price which will influence how reasonable or unreasonable a counter-offer might seem. Even if we feel like an initial price is far too high, it can make a slightly less-than-reasonable offer seem entirely reasonable in contrast to the anchor price.</p>
+    <p>Be especially mindful of this bias during financial negotiations such as houses, cars, and salaries. The initial price offered has proven to have a significant effect.</p>
+
+	<aside>
+		<h3>Primed to Buy?</h3>
+
+		<p>A personal example of anchoring I can recall was during the process of purchasing my first home.  It was so obvious to me both at the time and later that it serves as a useful example of anchoring bias in real life.
+
+		<p>The Real Estate agent we selected was a man I will simply call Craig. Craig was provided our search parameters in terms of house configuration, location, price, features, and so on.  After a week he scheduled a tour of a number of homes.
+
+		<p>The very first house he showed us was absolutely wrong.  It was massive, extremely expensive, and fairly run down.  It was almost as if he didn't read our requests. After the failure aka anchor, the game became clear, and we were able to better able see the difference between a real candidate and an influencing one.
+
+		<img id="aside_pix" src="images/real-estate-story.png" alt="Picture of people buying a house with a shady real estate agent">
+		<p>The morale of this story is that biases such as anchoring are used by people for their own purposes.  While they can be influencing, their power isn't ultimate especially if you are aware of the game.
+	</aside>
+
+	<!-- TODO: look at all this junk down below.  Maybe you should refactor this to use
+	   <details, more semantics, and just remove things that aren't being used.
+
+	   Get in the habit of sweeping up your code be it HTML, CSS, or JS otherwise it will degrade over time and not be easy to work with
+
+	   -->
+    <p><div class="fb-share-button" data-href="https://yourbias.is/anchoring" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://yourbias.is/anchoring&amp;src=sdkpreparse">Share</a></div>
+
+    <p class="further-reading"><b>Further reading</b><br>
+        <a href="https://en.wikipedia.org/wiki/Anchoring" target="_blank">Wikipedia</a>
+        <span class="separator">|</span>
+        <a href="https://amzn.to/2wpTTea" target="_blank">You Are Not So Smart (Please note this is an Amazon Associates link)</a>
+    </p>
+</article>
+
+<article id="sunk_cost_fallacy">
+    <h1>the sunk cost fallacy</h1>
+    <h2>You irrationally cling to things that have already cost you something.</h2>
+    <p>When we've invested our time, money, or emotion into something, it hurts us to let it go. This aversion to pain can distort our better judgment and cause us to make unwise investments. A sunk cost means that we can't recover it, so it's rational to disregard the cost when evaluating. For instance, if you've spent money on a meal, but you only feel like eating half of it, it's irrational to continue to stuff your face just because 'you've already paid for it'; especially considering the fact that you're wasting actual time doing so.</p>
+    <p>To regain objectivity, ask yourself: had I not already invested something, would I still do so now? What would I counsel a friend to do if they were in the same situation?</p>
+    <p></p>
+    <p><div class="fb-share-button" data-href="https://yourbias.is/the-sunk-cost-fallacy" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://yourbias.is/the-sunk-cost-fallacy&amp;src=sdkpreparse">Share</a></div>
+    <p class="further-reading"><b>Further reading</b><br>
+        <a href="https://amzn.to/2erM9nn" target="_blank">You Are Now Less Dumb (Please note this is an Amazon Associates link)</a>
+        <span class="separator">|</span>
+        <a href="https://en.wikipedia.org/wiki/Sunk_cost" target="_blank">Wikipedia</a>
+    </p>
+</article>
+
+<article id="availability_heuristic">
+    <h1>the availability heuristic</h1>
+    <h2>Your judgments are influenced by what springs most easily to mind.</h2>
+    <p>How recent, emotionally powerful, or unusual your memories are can make them seem more relevant. This, in turn, can cause you to apply them too readily. For instance, when we see news reports about homicides, child abductions, and other terrible crimes it can make us believe that these events are much more common and threatening to us than is actually the case.</p>
+    <p>Try to gain different perspectives and relevant statistical information rather than relying purely on first judgments and emotive influences.</p>
+    <p></p>
+    <p><div class="fb-share-button" data-href="https://yourbias.is/the-availability-heuristic" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://yourbias.is/the-availability-heuristic&amp;src=sdkpreparse">Share</a></div>
+    <p class="further-reading"><b>Further reading</b><br>
+        <a href="https://amzn.to/2wpTTea" target="_blank">You Are Not So Smart</a>
+        <span class="separator">|</span>
+        <a href="https://en.wikipedia.org/wiki/Availability_heuristic" target="_blank">Wikipedia</a>
+        <span class="separator">|</span>
+        <a href="https://amzn.to/2vHa0Tx" target="_blank">Thinking, Fast and Slow (Please note this is an Amazon Associates link)</a>
+    </p>
+</article>
+</section>
+
+</main>
+<footer>
+	<p>Content originally sourced from  <a href="https://yourbias.is">yourbias.is</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* main.css */
+@import url(vars.css);
+
+/* example of a gross approach to a CSS reset
+
+* {
+	margin: 0;
+	padding : 0;
+}
+
+a better approach might be found at https://andy-bell.co.uk/a-more-modern-css-reset/
+
+If you use one you'll need to add some things back in.
+
+*/
+
+body {
+	background-color : var(--background-color);
+	color : var(--text-color);
+	font-size : var(--body-size);
+}
+
+html.no-js body {
+	background-color : var(--error-color);
+}
+
+#error_msg:before {
+	content : var(--error-msg);
+}
+
+h1 {
+	color : var(--heading-color);
+	font-size : var(--heading-size);
+	margin-bottom: .5em;
+}
+
+
+h2 {
+	color : var(--subheading-color);
+	font-size : var(--subheading-size);
+	font-style : italic;
+	margin-top : .5em; /* tighten the sub-heading upwards */
+}
+
+p {
+	line-height : 1.5;
+	width : 70ch;
+	text-align : justify;
+}
+
+/*
+  as an exercise pull all these things out into CSS variables to get used to that syntax.
+
+  Look into all the unit types and maybe (or not consider the one absolute unit. Always remember like the W3C talks about that theoretical purity is not your main goal, it is user, dev, ... eventual that purity so be pragmatic
+
+ */
+aside {
+	border : 4px double black;
+	background-color : white;
+	padding : 1em;
+	margin: 2em;
+	float : right;
+	width : 50vw;
+}
+
+aside p {
+	width : initial;  /* take this rule off use the "-" sign trick to do it easily just put it in front of the property name and remove to toggle on and off.  What did it do and why?
+	*/
+}
+#aside_pix {
+	height : 50%;
+	width: 50%;
+
+	margin : 1em;
+	padding : .5em;
+
+	float : left;
+
+	border : 4px double black;
+	background-color: white;
+}
+
+/* note the use of a scoped element rule.  You could also be nav > a which is a direct descendent
+ */
+
+nav a {
+	text-decoration : none;
+}
+
+nav a:hover {
+	text-decoration : underline;
+}
+
+/*
+   TODO - Add a rule below to make the links that are outbound to the external sites have a little icon or at least text indicating they are offsite.  Use pseudo classes, attribute selectors and the content property.
+
+ */
